@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn CSS Easily</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      background: #2e7d32;
+      color: #fff;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    /* Welcome Section */
+    .welcome {
+      padding: 30px;
+      background: #fff;
+    }
+    .welcome img {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .welcome h2 {
+      margin: 20px 0 10px;
+      color: #333;
+    }
+    .welcome p {
+      color: #555;
+    }
+
+    /* Cards Section */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      width: 280px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .card h3 {
+      color: #2e7d32;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    Test
+  <!-- Header -->
+  <header>
+    Welcome to TeachPong
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <img src="teach pong.png" alt="Group Studying">
+    <h2>Learn Table Tennis Easily</h2>
+    <p>Master the art of playing table tennis.</p>
+  </section>
+
+  <!-- Cards Section -->
+  <section>
+    <h2>What You’ll Learn</h2>
+    <div class="container">
+      <div class="card">
+        <img src="fan.jpeg" alt="Interactive Lessons">
+        <h3>Interactive Lessons</h3>
+        <p>Engage With Forehand Exercise Lessons.</p>
+      </div>
+      <div class="card">
+        <img src="fan2.jpg" alt="Step by Step">
+        <h3>Step by Step</h3>
+        <p>Engage With Backhand drillings accuracy.</p>
+      </div>
+      <div class="card">
+        <img src="fan3.webp" alt="Build Projects">
+        <h3>Apply</h3>
+        <p>Execute every service efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 TeachPong All rights reserved
+  </footer>
 </body>
 </html>
